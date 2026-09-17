@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label text="Registre su nombre:" />
+        <TextField fx:id="txtNombreCliente" />
+        <Label text="Ingrese su correo:" />
+        <TextField fx:id="txtCorreoCliente" />
+        <Label text="Ingrese su telefono" />
+        <TextField fx:id="txtTelefonoCliente" />
+        <Label text="Ingrese su identificacion" />
+        <HBox prefHeight="43.0" prefWidth="580.0" spacing="40.0">
+            <children>
+                <TextField fx:id="txtDocumentoIdentificacionCliente" prefHeight="26.0" prefWidth="368.0" />
+                <Button fx:id="btnSeleccionarImagen" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="File chooser" />
+            </children>
+        </HBox>
+        <Label text="Directorio" />
+        <HBox prefHeight="30.0" prefWidth="580.0" spacing="40.0">
+            <children>
+                <TextField fx:id="txtDirectorioCliente" prefHeight="26.0" prefWidth="370.0" />
+                <Button fx:id="btnSeleccionarDirectorio" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Directory" />
+            </children>
+        </HBox>
+        <HBox prefHeight="35.0" prefWidth="580.0" spacing="40.0">
+            <children>
+                <Label prefHeight="18.0" prefWidth="184.0" text="Que tipo de cliente eres?" />
+                <ComboBox fx:id="cmbTipoCliente" prefHeight="26.0" prefWidth="145.0" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>
